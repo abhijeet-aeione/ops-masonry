@@ -1,1 +1,1 @@
-This is customised versio on https://github.com/gethinoakes/ngx-masonry
+This is a customized version of https://github.com/gethinoakes/ngx-masonry
