@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { NgxMasonryComponent } from './ops-masonry.component';
-import { NgxMasonryDirective } from './ops-masonry.directive';
+import { OpsMasonryComponent } from './ops-masonry.component';
+import { OpsMasonryDirective } from './ops-masonry.directive';
 
 @NgModule({
   imports: [],
-  declarations: [NgxMasonryComponent, NgxMasonryDirective],
-  exports: [NgxMasonryComponent, NgxMasonryDirective]
+  declarations: [OpsMasonryComponent, OpsMasonryDirective],
+  exports: [OpsMasonryComponent, OpsMasonryDirective]
 })
-export class NgxMasonryModule {}
+export class OpsMasonryModule {}

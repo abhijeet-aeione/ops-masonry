@@ -17,7 +17,7 @@ declare var require: any;
 let imagesLoaded: any;
 let masonryConstructor: any;
 
-import { NgxMasonryOptions } from './ops-masonry-options';
+import { OpsMasonryOptions } from './ops-masonry-options';
 
 @Component({
   selector: '[ops-masonry], ops-masonry',
@@ -30,13 +30,13 @@ import { NgxMasonryOptions } from './ops-masonry-options';
 	`
   ]
 })
-export class NgxMasonryComponent implements OnInit, OnChanges, OnDestroy {
+export class OpsMasonryComponent implements OnInit, OnChanges, OnDestroy {
   constructor(@Inject(PLATFORM_ID) private platformId: any, private _element: ElementRef) {}
 
   public _msnry: any;
 
   // Inputs
-  @Input() public options: NgxMasonryOptions;
+  @Input() public options: OpsMasonryOptions;
   @Input() public useImagesLoaded: Boolean = false;
   @Input() updateLayout: Boolean = false;
 
@@ -60,7 +60,7 @@ export class NgxMasonryComponent implements OnInit, OnChanges, OnDestroy {
 
     // Set default itemSelector
     if (!this.options.itemSelector) {
-      this.options.itemSelector = '[ngxMasonryItem], ngxMasonryItem';
+      this.options.itemSelector = '[opsMasonryItem], opsMasonryItem';
     }
 
     if (isPlatformBrowser(this.platformId)) {

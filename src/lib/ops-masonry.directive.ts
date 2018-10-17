@@ -1,6 +1,6 @@
 import { Directive, Inject, ElementRef, forwardRef, OnDestroy, AfterViewInit, PLATFORM_ID } from '@angular/core';
 
-import { NgxMasonryComponent } from './ops-masonry.component';
+import { OpsMasonryComponent } from './ops-masonry.component';
 import { isPlatformBrowser } from '@angular/common';
 
 interface MutationWindow extends Window {
@@ -11,13 +11,13 @@ interface MutationWindow extends Window {
 declare var window: MutationWindow;
 
 @Directive({
-  selector: '[ngxMasonryItem], ngxMasonryItem'
+  selector: '[opsMasonryItem], opsMasonryItem'
 })
-export class NgxMasonryDirective implements OnDestroy, AfterViewInit {
+export class OpsMasonryDirective implements OnDestroy, AfterViewInit {
   constructor(
     private _element: ElementRef,
-    @Inject(forwardRef(() => NgxMasonryComponent))
-    private _parent: NgxMasonryComponent,
+    @Inject(forwardRef(() => OpsMasonryComponent))
+    private _parent: OpsMasonryComponent,
     @Inject(PLATFORM_ID) private platformId: any
   ) {}
 

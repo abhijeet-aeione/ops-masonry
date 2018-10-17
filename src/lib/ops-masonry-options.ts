@@ -1,4 +1,4 @@
-export interface NgxMasonryOptions {
+export interface OpsMasonryOptions {
   itemSelector?: string;
   columnWidth?: number | string;
   gutter?: number | string;
